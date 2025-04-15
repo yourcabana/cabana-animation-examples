@@ -8,14 +8,13 @@ import {
   TransitionChild,
 } from "@headlessui/react";
 import { HeartIcon } from "lucide-react";
-import IconCabana from "@/public/icon-cabana.png";
 const navigation = [
   { name: "VibeCheck", href: "#", icon: HeartIcon, current: true },
 ];
 
 import { motion } from "motion/react";
 
-function classNames(...classes: any) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
